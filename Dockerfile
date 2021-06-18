@@ -22,7 +22,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 # Fix permissions for code-server
 RUN sudo chown -R coder:coder /home/coder/.local
 RUN sudo apt-get install -y nodejs npm
-RUN npm install -g yarn
+RUN sudo npm install -g yarn
 
 # Port
 ENV PORT=8080
